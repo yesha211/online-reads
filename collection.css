@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    background-color: rgb(0,8,20);
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.right{
+    width: 30%;
+    background-color: rgba(0,0,0,0.0);
+    
+
+}
+.fb a{
+    text-decoration: none;
+    font-style: normal;
+    color: whitesmoke;
+}
+.fb{
+    text-decoration: none;
+    font-size: 23px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+h2{
+    font-size: 25px;
+    margin-top: 60px;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 90%;
+    margin:0 auto;
+ }
+.row1 a{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+ }
+.row1 p{
+     margin-left: 10px;
+ }
+.image{
+    
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 10px;
+}
+.one{
+    font-size: 19px;
+    margin-top: -14px;
+}
+.two{
+    font-size: 19px;
+    margin-top: -25px;
+    margin-left: 218px;
+}
+.three{
+    font-size: 19px;
+    margin-top: -22px;
+    margin-left: 414px;
+}
+.four{
+    font-size: 19px;
+    margin-top: -25px;
+    margin-left: 637px;
+}
+.five{
+    font-size: 19px;
+    margin-top: -28px;
+    margin-left: 837px;
+}
+.six{
+    font-size: 19px;
+    margin-top: -23px;
+    margin-left: 1032px;
+}
+.seven{
+    font-size: 19px;
+    margin-top: -26px;
+    margin-left: 1237px;
+}
+h4{
+    margin-top: 30px;
+}
+
+

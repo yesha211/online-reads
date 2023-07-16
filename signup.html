@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="list">
+            
+                <ul class="nav-list">
+                               <div class="logo">
+                                   <img src="img/logo.png" alt="logo">
+                               </div>
+                            <div class="mlist">
+                                <li><a href="index.html">Home</a></li>
+                                
+                               
+                                <li><a href="#" class="dropbox">&nbsp;&nbsp;&nbsp;Collection <span><i class="fa-sharp fa-solid fa-caret-down"></i></span></a>
+                                    <ul class="dd">
+                                        <li><a href="collection.html">Fiction</a>
+                                         
+                                        </li>
+
+                                        <li><a href="collection.html">Non-fiction</a>
+                                         
+                                        </li>
+                                        
+    
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contact Us</a></li>
+                            </div>
+                </ul>
+            </div>              
+                      <div class="right">
+                        
+                        <button class="btn" onclick="window.location.href='login.html';">Login</button>
+                      </div>
+            
+        </nav>
+        <div class="data1">
+        <form onsubmit="signup" class="container2">
+           
+            <label for="email" class="text1">Email Id</label>               
+            <br>
+            <input class="l3" type="email" name="email" id="email" placeholder="enter email address">
+            <br>
+            <label for="username" class="text1">User Name</label>               
+            <br>
+            <input class="l3" type="text" name="username" id="username" placeholder="enter username">
+            <br>
+            <label for="password" class="text1">Password</label>               
+            <br>
+            <input class="l3" type="password" name="password" id="password" placeholder="enter password">
+            <br>
+            <label for="confirmpwd" class="text1">Confirm Password</label>               
+            <br>
+            <input class="l3" type="password" name="confirmpwd" id="confirmpwd" placeholder="enter confirm password">
+            <br>
+            <label for="course" class="text2">Course:</label>               
+            <br>
+            <select name="course" id="course">
+                <option value="" selected disabled style="color: gray;">--select course--</option>
+                <option value="btech">B.tech</option>
+                <option value="bcom">B.Com</option>
+                <option value="bba">BBA</option>
+                <option value="bca">BCA</option>
+                <option value="bsc">BSC</option>
+                <option value="mtech">M.Tech</option>
+                <option value="mba">MBA</option>
+                <option value="mcom">M.Com</option>
+                <option value="mca">MCA</option>
+                <option value="msc">MSC</option>
+            </select>
+            <br>
+            
+            
+            
+            
+            <button class="btn1" id="btn" >Sign Up</button>
+           
+        </form>
+        <div class="right1">
+            <img src="img/libp5.png">
+        </div>
+        </div>
+    </div>
+    <script src="signupScript.js"></script>
+    <script src="https://kit.fontawesome.com/b0da61b12f.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    background-color: rgb(0 8 20);
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    min-height: 150vh;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    
+    width: 100%;
+    height: 68px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0,8,20);
+    
+
+}
+.white{
+    color: white;
+}
+.fulldata{
+    width: 95%;
+}
+
+
+
+.list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mlist{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   /* padding-left: 5px;*/
+    
+}
+
+.navbar li {
+    text-decoration: none;
+    list-style: none;
+}
+.navbar ul {
+    text-decoration: none;
+    display: flex;
+    justify-content: left ;
+}
+.navbar li a{
+    text-decoration: none;
+   /* text-align: center; */
+    justify-content: center;
+   
+    padding: 11px;
+    margin-top: 15px;
+    color: whitesmoke;
+    font-size: 21px;
+    margin-block-end: auto;
+}
+.dd{
+    width: 32%;
+    padding: 0px;
+    display: flex;
+    justify-content: left;
+}
+.navbar ul li ul{
+    display:  none;
+    position: absolute;
+    padding: 0px;
+    width: 500px;
+    padding-top: 32px;
+    width: 206px;
+}
+.navbar ul li ul li{
+   padding: 16px;
+   
+}
+.navbar ul li:hover ul li{
+    display: block;
+}
+    
+.navbar ul li a:hover{
+    display: initial;
+    background-color: rgba(0,0,0,0.6);
+    color: whitesmoke;
+}
+
+.logo img{
+    width:max(45px,14%);
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    margin-left: 29px;
+    margin-top: 12px;
+}
+.btn{
+   
+    float: right;
+   
+    margin-right: 10px;
+    font-size: 15px;
+    padding: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border: 1px solid whitesmoke;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-top: 10px;
+    margin-right: 15px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out ;
+    background-color: whitesmoke;
+}
+.libp{
+    margin-top: 0px;
+    width: 100%;
+    margin-left: 0px;
+}
+.libp img{
+    width: 100%;
+}
+.background{
+    background: rgba(0,0,0,0.7) url(img/bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    min-height: 100vh;
+}
+.none{
+    display: none!important;
+}
+.block{
+    display: block!important;
+}
+.NoFlex:hover .dd{
+    display: block;
+}
+.icon{
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:800px){
+    .mlist{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+        margin-top: -10px;
+       
+       /* padding-left: 5px;*/
+        
+    }
+    .logo{
+        width: 33%;
+    }
+    .logo img{
+        width: 20%;
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+}
+@media (max-width:1042px){
+    .navbar{
+        width: 100%;
+    }
+    .mlist{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+        margin-top: -13px;
+       
+       /* padding-left: 5px;*/
+        
+    }
+    .logo{
+        width: 33%;
+    }
+    .logo img{
+        width: 17%;
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        margin-left: 29px;
+        margin-top: 12px;
+    }
+
+}
+@media (max-width:1042px){
+    
+    .mlist{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+       /* padding-left: 5px;*/
+        
+    }
+    .logo img{
+        width: max(45px,17%);
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        margin-left: 29px;
+        margin-top: 12px;
+    }
+
+}
+@media(max-width:800px){
+    .mlist{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+       
+       /* padding-left: 5px;*/
+        
+    }
+    .logo img{
+        width: max(45px,17%);
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+}
+
+
+@media (max-width:1412px){
+    .btn1{
+        margin-right: 420px;
+    }
+}
+@media (max-width:1016px){
+    .d5{
+        flex-direction: column; 
+    }
+    .d5 img{
+        width: 60%;
+    }
+}
+@media (max-width:772px)
+{
+    .sec1 {
+        width: 95%;
+        color: whitesmoke;
+        font-family:  'Open Sans', sans-serif;
+        font-size: 25px;
+        padding-top: 200px;
+        padding-left: 50px;
+    }
+    .fontsize{
+        font-size: 25px!important;
+    }
+}
+@media (max-width:540px) {
+    .d5 img{
+        width: 80%;
+    }
+}
+
+@media (max-width:758px) {
+    .list{
+        position: absolute;
+        top: 67px;
+        flex-direction: column;
+        background-color: rgb(0,8,20);
+        padding-bottom: 2rem;
+        gap: 1rem;
+    }
+    .mlist{
+        flex-direction: column;
+        gap: 1rem;
+        
+
+    }
+    .icon{
+        display: flex;
+        margin-right: 1.4rem;
+    }
+}
+
+.spic a{
+    text-decoration: none;
+    font-style: normal;
+    color: whitesmoke;
+}
+.spic{
+    text-decoration: none;
+    font-size: 23px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+h2{
+    font-size: 25px;
+    margin-top: 60px;
+}
+.row1{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+   width: 90%;
+   margin:0 auto;
+}
+.row1 a{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.row1 p{
+    margin-left: 10px;
+}
+.row2{
+    margin-top: 45px;
+    margin-left: 235px;
+}
+.image {
+    
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 10px;
+}
+.one{
+    font-size: 19px;
+    margin-top: -1px;
+}
+.two{
+    font-size: 19px;
+    margin-top: -18px;
+    margin-left: 218px;
+}
+.three{
+    font-size: 19px;
+    margin-top: -22px;
+    margin-left: 430px;
+}
+.four{
+    font-size: 19px;
+    margin-top: -25px;
+    margin-left: 637px;
+}
+.five{
+    font-size: 19px;
+    margin-top: -23px;
+    margin-left: 837px;
+}
+
+h4{
+    margin-top: 30px;
+}
+@media(max-width:800px){
+    .mlist{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+        margin-top: -10px;
+       
+       /* padding-left: 5px;*/
+        
+    }
+    .logo{
+        width: 33%;
+    }
+    .logo img{
+        width: 20%;
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+}
+@media (max-width:1042px){
+    .navbar{
+        width: 100%;
+    }
+    .mlist{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+        margin-top: -13px;
+       
+       /* padding-left: 5px;*/
+        
+    }
+    .logo{
+        width: 33%;
+    }
+    .logo img{
+        width: 17%;
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        margin-left: 29px;
+        margin-top: 12px;
+    }
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="list" id="navBarKhud">
+                
+                <ul class="nav-list">
+                               
+                            <div class="mlist">
+                                <li><a href="index.html">Home</a></li>
+                                
+                               
+                                <li class="NoFlex"><a href="#" class="dropbox">&nbsp;&nbsp;&nbsp;Collection <span><i class="fa-sharp fa-solid fa-caret-down"></i></span></a>
+                                    <ul class="dd">
+                                        <li><a href="collection.html">Fiction</a>
+                                        </li>
+                                        <li><a href="collection.html">Non-fiction</a></li>
+                                    </ul>
+                                </li>
+                               
+                            </div>
+                </ul>
+
+                  
+            </div>              
+                    
+                      <div class="icon " id="navBar">
+                        <i class="fa-solid fa-bars white "></i>
+                      </div>
+            
+        </nav>
+        <div class="spic">
+            
+            <h2 style="font-size: 40px; text-align: center ;">Action Books</h2>
+            <div class="row1">
+               <a href="bookdet.html" id="0"> <img src="img/acgypsyblood.jpg" height="200px" width="150px" class="image"> <p>Gypsy Blood</p></a>
+                <a href="bookdet.html" id="1"><img src="img/aclastequation.jpg"  height="200px" width="150px" class="image"> <p>Last Equation</p></a>
+                <a href="bookdet.html" id="2"><img src="img/acallies.jpg"  height="200px" width="150px" class="image"><p>Allies</p></a>
+                <a href="bookdet.html" id="3"><img src="img/actheculled.jpg"  height="200px" width="150px" class="image"> <p >The culled</p></a>
+                <a href="bookdet.html" id="4"><img src="img/acthefallen.jpg"  height="200px" width="150px" class="image"><p >The Fallen</p></a>
+              
+               
+                
+                
+                
+            
+          
+                <a href="bookdet.html" id="5"><img src="img/acthelast.jpg"  height="200px" width="150px" class="image"><p>The Last Odyssey</p></a>
+                <a href="bookdet.html" id="6"><img src="img/acthewalk.jpg"  height="200px" width="150px" class="image"><p>The Walk</p></a>
+                <a href="bookdet.html" id="7"><img src="img/actwistedprey.jpg"  height="200px" width="150px" class="image"><p>Twisted Prey</p></a>
+                <a href="bookdet.html" id="8"><img src="img/acwrathofposeidon.jpg"  height="200px" width="150px" class="image"><p>Wrath of poseidon</p></a>
+                <a href="bookdet.html" id="9"><img src="img/acraibrising.jpg"  height="200px" width="150px" class="image"><p>Rain Rising</p></a>
+
+                
+                
+            </div>
+          
+    </div>
+    
+    <script src="https://kit.fontawesome.com/b0da61b12f.js" crossorigin="anonymous"></script>
+    <script src="bookdet2.js"></script>
+    <script src="script1.js"></script>
+    <script src="https://kit.fontawesome.com/634e3ca5fb.js" crossorigin="anonymous"></script>
+     
+     <script src="lib1.js"></script>
+    
+</body>
+</html>

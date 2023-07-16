@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our collection</title>
+    <link rel="stylesheet" href="collection.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 68px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0px;
+
+}
+.fulldata{
+    width: 95%;
+}
+.list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mlist{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   /* padding-left: 5px;*/
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0,8,20);
+}
+.navbar li {
+    text-decoration: none;
+    list-style: none;
+}
+.navbar ul {
+    text-decoration: none;
+}
+.navbar li a{
+    text-decoration: none;
+   /* text-align: center; */
+    justify-content: center;
+   
+    padding: 11px;
+    margin-top: 15px;
+    color: whitesmoke;
+    font-size: 21px;
+    margin-block-end: auto;
+}
+.dd{
+    width: 32%;
+    padding: 0px;
+}
+.navbar ul li ul{
+    display:  none;
+    position: absolute;
+    padding: 0px;
+    width: 500px;
+    padding-top: 32px;
+    width: 206px;
+}
+.navbar ul li ul li{
+   padding: 16px;
+   
+}
+
+.navbar ul li:hover ul li{
+    display: block;
+}
+    
+.navbar ul li a:hover{
+    display: initial;
+    
+    background-color: rgba(0,0,0,0.6);
+    color: whitesmoke;
+}
+
+.logo img{
+    width:max(45px,14%);
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    margin-left: 29px;
+    margin-top: 12px;
+}
+.icon{
+    color: white;
+    display: none;
+}
+.btn{
+   
+    float: right;
+    /* margin: -36px;
+    margin-top: 18px; */
+    /* margin-right: 55px; */
+    margin-right: 10px;
+    font-size: 15px;
+    padding: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border: 1px solid whitesmoke;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+@media (max-width:1042px){
+    
+    .mlist{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+       /* padding-left: 5px;*/
+        
+    }
+    .logo img{
+        width: max(45px,17%);
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        margin-left: 29px;
+        margin-top: 12px;
+    }
+
+}
+@media(max-width:800px){
+    .mlist{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+       
+       /* padding-left: 5px;*/
+        
+    }
+    .logo img{
+        width: max(45px,17%);
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+}
+@media (max-width:758px) {
+    .list{
+        position: absolute;
+        top: 67px;
+        flex-direction: column;
+        background-color: rgb(0,8,20);
+        padding-bottom: 2rem;
+        gap: 1rem;
+    }
+    .mlist{
+        flex-direction: column;
+        gap: 1rem;
+        
+
+    }
+    .icon{
+        display: flex;
+        background-color: black;
+        margin-right: 1.4rem;
+        color: white;
+    }
+}
+.none{
+    display: none!important;
+}
+.NoFlex:hover .dd{
+    display: block;
+    
+}
+@media (max-width:750px){
+    .navbar ul li ul li:hover{
+        
+        background-color: rgba(0,0,0,0.7);
+    }
+    .navbar ul li ul li a{
+        font-size: 18px;
+        text-align: center;
+        padding-right: 47px;
+    }
+    .navbar ul li ul li{
+        padding-top: 10px;
+        padding-left: 20px;
+
+    }
+    .navbar ul li ul{
+        padding-top: 10px;
+    }
+    .btn{
+        margin-top : 30px;
+        
+    }
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="list" id="navBarKhud">
+                
+                <ul class="nav-list">
+                               
+                            <div class="mlist">
+                                <li><a href="index.html">Home</a></li>
+                                
+                               
+                                <li class="NoFlex"><a href="#" class="dropbox">&nbsp;&nbsp;&nbsp;Collection <span><i class="fa-sharp fa-solid fa-caret-down"></i></span></a>
+                                    <ul class="dd">
+                                        <li><a href="login.html">Fiction</a>
+                                        </li>
+                                        <li><a href="login.html">Non-fiction</a></li>
+                                    </ul>
+                                </li>
+                                
+                            </div>
+                </ul><br><br>
+
+                  <div class="right">
+                        <button class="btn" onclick="window.location.href='signup.html';">Sign Up</button>
+                        <button class="btn" onclick="window.location.href='login.html';">Login</button>
+                 </div>
+            </div>              
+                    
+                      <div class="icon " id="navBar">
+                        <i class="fa-solid fa-bars white "></i>
+                      </div>
+            
+        </nav>
+    <h2 style="color: whitesmoke; padding-top: 3rem;">Our collection</h2><br>
+    <div class="fb">
+       <h4> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Fiction books</h4>
+        <div class="row1">
+       <a href="sci-fi.html"> <img src="img/sci-fi.jpg" height="200px" width="150px" class="image"><p>Sci-fi books</p></a>
+        <a href="action.html"><img src="img/action.jpg"  height="200px" width="150px" class="image"><p>Action books</p></a>
+        <a href="adventure.html"><img src="img/adventure.jpg"  height="200px" width="150px" class="image"><p>Adventure books</p></a>
+        <a href="mystry.html"><img src="img/mystry.jpg"  height="200px" width="150px" class="image"><p>Mystry book</p></a>
+        <a href="crime.html"><img src="img/crime.jpg"  height="200px" width="150px" class="image"><p>Crime books</p></a>
+        <a href="horror.html"><img src="img/horror.jpg"  height="200px" width="150px" class="image"><p>Horror books</p></a>
+        <a href="comic.html"><img src="img/comic.jpg"  height="200px" width="150px" class="image"><p>Comic books</p></a><br>
+            </div>
+            <h4> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Non-fiction book</h4>
+        <div class="row1">
+        <a href="bio.html"><img src="img/biography.jpg"  height="200px" width="150px" class="image"><p>Biography books</p></a>
+    
+        <a href="cook.html" ><img src="img/cookbook.jpg" height="200px" width="150px" class="image"><p>Cooking books</p></a>
+        <a href="true.html"><img src="img/truestory.jpg" href="true.html" height="200px" width="150px" class="image"><p>Truestories books</p></a>
+    
+       </div>
+    
+        
+    
+    </div>
+    </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b0da61b12f.js" crossorigin="anonymous"></script>
+    <script src="lib2.js"></script>
+</body>
+</html>

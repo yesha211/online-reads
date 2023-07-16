@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: rgb(0 8 20);
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    min-height: 120vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+   
+    height: 68px;
+    position: sticky;
+    top: 0;
+
+}
+
+.list{
+    width: 70%;
+}
+.mlist{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    margin-top: -20px;
+   
+   /* padding-left: 5px;*/
+    
+}
+.navbar{
+    background-color: rgb(0,8,20);
+}
+.navbar li {
+    text-decoration: none;
+    list-style: none;
+    margin-top: -25px;
+    
+}
+.navbar ul {
+    text-decoration: none;
+}
+.navbar li a{
+    text-decoration: none;
+   /* text-align: center; */
+    justify-content: center;
+   
+    padding: 11px;
+    margin-top: 15px;
+    color: whitesmoke;
+    font-size: 21px;
+    margin-block-end: auto;
+}
+.dd{
+    width: 32%;
+    padding: 0px;
+   
+}
+.navbar ul li ul{
+    display:  block;
+    position: absolute;
+    padding: 0px;
+    width: 36%;
+    margin-top: 32px;
+    
+}
+.navbar ul li ul li{
+   width: 25%;
+   padding: 16px;
+   display: none;
+   
+   
+}
+.navbar ul li:hover ul li{
+    display: block;
+}
+    
+.navbar ul li a:hover{
+    display: initial;
+    background-color: rgba(0,0,0,0.6);
+}
+.logo{
+    width: 33%;
+}
+.logo img{
+    width: 14%;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    margin-left: 29px;
+    margin-top: 12px;
+}
+.btn{
+    margin-left: 15px;
+    float: right;
+    margin: -36px;
+    margin-top: 18px;
+    margin-right: 55px;
+    font-size: 15px;
+    padding: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border: 1px solid whitesmoke;
+     background-color: rgb(0,8,20);
+    border-radius: 6px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+.right{
+    width: 30%;
+    background-color: rgba(0,0,0,0.0);
+    
+
+}
+.l3{
+    
+    border: 2px solid black;
+    width: 40%;
+    padding-left: 8px;
+    color: black;
+    border-radius: 5px;
+    height: 38px;
+    font-size: 18px;
+    font-family: Poppins,sans-serif;
+    margin-left: 50px;
+    
+}
+.hdng1{
+    /*border: 2px solid yellowgreen;*/
+    margin-left: 276px;
+    margin-top: 128px;
+    display: block;
+    font-family: Poppins,sans-serif;
+}
+.p1{
+    /*border: 2px solid black;*/
+    margin-left: 276px;
+    font-family: Poppins,sans-serif;
+}
+.btn1{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 23px;
+    font-size: 20px;
+    padding: 8px;
+    margin-right: -338px;
+    border: 1px solid black;
+    /* outline: none; */
+    background-color: #5050d7;
+    border-radius: 8px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+.text1{
+    color: whitesmoke;
+    margin-left: 50px;
+}
+.data1{
+    margin-top: 100px;
+    margin-left: 100px;
+    padding: 5px;
+}
+.text2{
+    color: whitesmoke;
+    margin-left: 50px;
+}
+#course{
+    margin-left: 51px;
+    padding: 7px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+#check1{
+    color: whitesmoke;
+    margin-left: 51px;
+    
+}
+.right1{
+    float: right;
+    margin-top: -470px;
+}
+.right1 img{
+    width: 80%;
+}
+
+
+@media (max-width : 1370px){
+    /*.l3{
+    
+        border: 2px solid black;
+        width: 40%;
+        padding-left: 8px;
+        color: black;
+        border-radius: 5px;
+        height: 38px;
+        font-size: 18px;
+        font-family: Poppins,sans-serif;
+        margin-left: 50px;
+        
+    }
+    .data1{
+        margin-top: 100px;
+        margin-left: 100px;
+        padding: 5px;
+    }
+    .text1{
+        color: whitesmoke;
+        margin-left: 50px;
+    }*/
+    .right1{
+        display: flex;
+        justify-content: right;
+    }
+    .right1 img{
+        width: 70%;
+    }
+}
+
+@media(max-width:1000px){
+    .container{
+        min-height: 160vh;
+    }
+    .right1{
+        display: flex;
+        justify-content: right;
+    }
+    .right1 img{
+        width: 0;
+    }
+    .l3{
+        display: flex;
+        border: 2px solid black;
+        width: 40%;
+        padding-left: 8px;
+        color: black;
+        border-radius: 5px;
+        height: 38px;
+        font-size: 20px;
+        font-family: Poppins,sans-serif;
+        margin: 0 auto;
+        justify-content: center;
+        
+    }
+    .data1{
+        
+        margin: 50px auto;
+        justify-content: center;
+        padding: 5px;
+    }
+    .text1{
+        display: flex;
+        justify-content: center;
+        color: whitesmoke;
+        margin : 0 auto;
+        font-size: 25px;
+    }
+    #check1{
+        color: whitesmoke;
+        margin : 0 auto;
+        display: flex;
+        font-size: 15px;
+        justify-content: center;
+           
+    }
+    #course{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 7px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    }
+    .text2{
+        color: whitesmoke;
+        margin : 0 auto;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .btn1{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+   
+}
+@media (max-width:570px){
+    .l3{
+        display: flex;
+        border: 2px solid black;
+        width: 60%;
+        padding-left: 8px;
+        color: black;
+        border-radius: 5px;
+        height: 38px;
+        font-size: 20px;
+        font-family: Poppins,sans-serif;
+        margin: 0 auto;
+        justify-content: center;
+        
+    }
+}
+@media(max-width:800px){
+    .mlist{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+        margin-top: -10px;
+       
+       /* padding-left: 5px;*/
+        
+    }
+    .logo{
+        width: 33%;
+    }
+    .logo img{
+        width: 20%;
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+}
+@media (max-width:1042px){
+    .navbar{
+        width: 96%;
+    }
+    .mlist{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+        margin-top: -13px;
+       
+       /* padding-left: 5px;*/
+        
+    }
+    .logo{
+        width: 33%;
+    }
+    .logo img{
+        width: 17%;
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        margin-left: 29px;
+        margin-top: 12px;
+    }
+
+}
+
