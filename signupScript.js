@@ -80,6 +80,7 @@ btn.addEventListener("click",(e)=>{
     const json = JSON.stringify(user);
     localStorage.setItem(`${user.username}`,json);
     console.log('user added');
+    window.location.assign("collection.html");
     email.value="";
     username.value="";
     pass.value="";
